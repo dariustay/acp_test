@@ -1,0 +1,24 @@
+# Agents settings
+agents:
+  router:
+    llm_model: gemini/gemini-2.5-flash
+    max_tokens: 4096
+  insurance:
+    llm_model: gemini/gemini-2.5-flash
+    max_tokens: 2048
+  health:
+    llm_model: gemini/gemini-2.5-flash
+    max_tokens: 2048
+
+# RAG tool settings
+rag:
+  insurance:
+    llm_model: gemini-2.5-flash
+    embedding_model: models/text-embedding-004
+    chunk_size: 1200
+    chunk_overlap: 200
+
+# Documents
+documents:
+  - path: ../docs/gold-hospital-and-premium-extras.pdf
+    data_type: pdf_file
